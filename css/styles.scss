@@ -1,0 +1,77 @@
+body {
+  font-family: 'Castoro' ;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  display: flex;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+
+  
+  #logo {
+
+    h1 {
+      font-size: 28px;
+      line-height: 94px;
+      padding: 0 36px;
+    }
+  }
+  
+  nav {
+    margin: 20px 40px 20px auto;
+    font-size: 28px;
+    line-height: 30px;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin-left: auto;
+    
+      li {
+        width: fit-content;
+        padding: 8px;
+        margin: 4px;
+        line-height: 30px;
+        position: relative;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            width: 100%;
+            background: black;
+            color: white;
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.card {
+  width: 10vw;
+  height: 10vw;
+  background: #ccc;
+  opacity: 0;
+}
+
+.rotate {
+  transform: rotate3d(3, -2, 0, 360deg);
+  transition: all 2s;
+}
